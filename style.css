@@ -1,0 +1,90 @@
+* {
+    background-color: #2E4053;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+
+  /* properti pendukung */
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.flex-container-row {
+  display: flex;
+}
+
+.button {
+  flex-basis: 25%;
+ 
+  /* properti pendukung */
+  font-size: 1.5em;
+  text-align: center;
+  padding: 40px;
+  border: 1px solid rgb(146, 146, 146);
+  background: -webkit-linear-gradient(top, #AEB6BF, rgb(215, 215, 215));
+  cursor: pointer;
+}
+
+.double {
+  flex-basis: 50%;
+}
+
+.display {
+  color: white;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #2E4053;
+  border: 1px solid rgb(146, 146, 146);
+  font-size: 2em;
+}
+
+.operator,
+.negative,
+.equals {
+  background: #5D6D7E;
+  color: antiquewhite;
+}
+
+.card {
+  box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.button:hover {
+  color: #808080;
+  transition: 0.5s;
+}
+
+.runningtext {
+  color: white;
+  font-weight: 100;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-top: 20px;
+}
+
+.runningtext span{
+  color: #6a9bcf;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 513px) {
+  .button {
+      padding: 10px;
+  }
+
+  .runningtext{
+    font-size: 12px;
+  }
+}
